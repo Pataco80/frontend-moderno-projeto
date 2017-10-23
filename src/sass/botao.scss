@@ -1,23 +1,22 @@
-$cor: orange;
+$cor: green;
 
 body {
     background-color: $cor;
 }
 
-
-
-
-.botao {
+@mixin botao {
     display: inline-block;
     border-radius: 15px;
-    background-color: #15afcb;
     padding: 15px;
     border: none;
-    color: white;
     font-size: 1.5em;
 }
-
-
-.danger {
+.botao-primary {
+    @include botao;
+    background-color: #15afcb;
+    color: $cor;
+}
+.botao-danger {
+    @include botao;
     background-color: red;
 }
