@@ -1,0 +1,28 @@
+{
+  "name": "frontend-moderno-projeto-1",
+  "version": "1.0.0",
+  "description": "Curso Frontend Moderno: Gulp, SASS, NPM-script, Git e Git-bash Daniel Tapias Morales",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pataco80/frontend-moderno-projeto-1.git"
+  },
+  "keywords": [
+    "Frontend",
+    "NPM",
+    "Git",
+    "Node.js",
+    "Gulp",
+    "SASS",
+    "Bootstrap"
+  ],
+  "author": "Ricardo Do Vale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pataco80/frontend-moderno-projeto-1/issues"
+  },
+  "homepage": "https://github.com/Pataco80/frontend-moderno-projeto-1#readme"
+}
