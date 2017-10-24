@@ -1,3 +1,51 @@
+// functions
+
+@function escurece($bg, $valcor:15){
+    @return darken($bg, $valcor);
+}
+@function esclerece($bg, $valcor:15){
+    @return lighten($bg, $valcor);
+}
+
+// mixin
+
+@mixin border-ronded($rondo:50%){
+    border-radius: $rondo;
+}
+
+div {
+    @include border-ronded;
+}
+
+span {
+    @include border-ronded(20%);
+}
+
+// extend
+
+.button {
+    padding: 15px;
+}
+
+.button-primary {
+    $bg: #00f;
+    @extend .button;
+    background-color: $bg;
+    &:hover{
+        background-color: esclerece($bg, 40);
+    }
+}
+.button-danger {
+    $bg: #f00;
+    @extend .button;
+    background-color: $bg;
+    &:hover{
+        background-color: escurece($bg, 20);
+    }
+}
+
+// codigo
+
 body {
     color: red;
 }
@@ -9,31 +57,9 @@ nav a {
     }
 }
 
-// mixin
-
-@mixin border-ronded {
-    border-radius: 50%;
-}
-
-div {
-    @include border-ronded;
-}
-
-span {
-    @include border-ronded;
-}
-
-// extend
-
-.button {
-    padding: 15px;
-}
-
-.button-primary {
-    @extend .button;
-    background-color: blue;
-}
-.button-danger {
-    @extend .button;
-    background-color: red;
+.menu {
+    height: 0;
+    &--is_opened {
+        height: auto;
+    }
 }

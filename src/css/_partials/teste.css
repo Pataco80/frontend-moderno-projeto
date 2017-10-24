@@ -1,3 +1,22 @@
+div {
+  border-radius: 50%; }
+
+span {
+  border-radius: 20%; }
+
+.button, .button-primary, .button-danger {
+  padding: 15px; }
+
+.button-primary {
+  background-color: #00f; }
+  .button-primary:hover {
+    background-color: #ccccff; }
+
+.button-danger {
+  background-color: #f00; }
+  .button-danger:hover {
+    background-color: #990000; }
+
 body {
   color: red; }
 
@@ -6,17 +25,7 @@ nav a {
   nav a:hover {
     background-color: red; }
 
-div {
-  border-radius: 50%; }
-
-span {
-  border-radius: 50%; }
-
-.button, .button-primary, .button-danger {
-  padding: 15px; }
-
-.button-primary {
-  background-color: blue; }
-
-.button-danger {
-  background-color: red; }
+.menu {
+  height: 0; }
+  .menu--is_opened {
+    height: auto; }
