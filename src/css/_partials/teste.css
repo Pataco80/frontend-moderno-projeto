@@ -5,3 +5,18 @@ nav a {
   background-color: green; }
   nav a:hover {
     background-color: red; }
+
+div {
+  border-radius: 50%; }
+
+span {
+  border-radius: 50%; }
+
+.button, .button-primary, .button-danger {
+  padding: 15px; }
+
+.button-primary {
+  background-color: blue; }
+
+.button-danger {
+  background-color: red; }

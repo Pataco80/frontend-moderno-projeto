@@ -8,3 +8,32 @@ nav a {
         background-color: red;
     }
 }
+
+// mixin
+
+@mixin border-ronded {
+    border-radius: 50%;
+}
+
+div {
+    @include border-ronded;
+}
+
+span {
+    @include border-ronded;
+}
+
+// extend
+
+.button {
+    padding: 15px;
+}
+
+.button-primary {
+    @extend .button;
+    background-color: blue;
+}
+.button-danger {
+    @extend .button;
+    background-color: red;
+}
