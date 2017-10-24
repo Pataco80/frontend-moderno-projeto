@@ -1,0 +1,7 @@
+body {
+  color: red; }
+
+nav a {
+  background-color: green; }
+  nav a:hover {
+    background-color: red; }

@@ -1,0 +1,10 @@
+body {
+    color: red;
+}
+
+nav a {
+    background-color: green;
+    &:hover{
+        background-color: red;
+    }
+}
